@@ -1,0 +1,31 @@
+{
+  "name": "aae-aercloud-behaviors",
+  "version": "0.1.0",
+  "authors": [
+    "YC <aercloud-dev @aeris.net>"
+  ],
+  "description": "Shared behaviors for AerCloud Webservice APIs.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "aercloud"
+  ],
+  "main": "aae-aercloud-config-behavior.html",
+  "license": "http://aercloud.github.io/LICENSE.txt",
+  "homepage": "https://github.com/aercloudappexpress/aae-aercloud-behaviors/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "aae-base": "aercloudappexpress/aae-base#^0.1.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^3.4.0"
+  }
+}

@@ -1,0 +1,31 @@
+<!--
+@license
+Copyright (c) 2015 The AerCloud Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://aercloud.github.io/LICENSE.txt
+The complete set of authors may be found at http://aercloud.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://aercloud.github.io/CONTRIBUTORS.txt
+Code distributed by Aeris as part of the aercloud project is also
+subject to an additional IP rights grant found at http://aercloud.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
+<link rel="import" href="../aae-base/aae-base.html">
+
+<!--
+Configuration for calling AerCloud Webservice APIs.
+-->
+
+<script>
+(function() {
+  var appExp = window.AppExpress;
+
+  appExp.config = {
+    properties: {
+      account: String,
+      apiKey: String,
+      container: String
+    }
+  };
+})();
+</script>
