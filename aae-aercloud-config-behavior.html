@@ -13,14 +13,17 @@ subject to an additional IP rights grant found at http://aercloud.github.io/PATE
 <link rel="import" href="../aae-base/aae-base.html">
 
 <!--
-Configuration for calling AerCloud Webservice APIs.
+Provide configuration to call AerCloud Webservice APIs.
 -->
 
+/**
+ * Provide configuration to call AerCloud Webservice APIs.
+ */
 <script>
 (function() {
   var appExp = window.AppExpress;
 
-  appExp.config = {
+  appExp.AerCloudConfig = {
     properties: {
       account: String,
       apiKey: String,
