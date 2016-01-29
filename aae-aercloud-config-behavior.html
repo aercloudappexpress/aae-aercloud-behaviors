@@ -25,9 +25,18 @@ Provide configuration to call AerCloud Webservice APIs.
 
   appExp.AerCloudConfig = {
     properties: {
-      account: String,
-      apiKey: String,
-      container: String
+      account: {
+      	type: String,
+      	notify: true
+      },
+      apiKey: {
+      	type: String,
+      	notify:  true
+      },
+      container: {
+      	type: String,
+      	notify: true
+      }
     }
   };
 })();

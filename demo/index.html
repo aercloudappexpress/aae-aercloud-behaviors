@@ -12,12 +12,23 @@ subject to an additional IP rights grant found at http://aercloud.github.io/PATE
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-    <title>aae-aercloud Demo</title>
+    <title>aae-aercloud-behaviors Demo</title>
     <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="../../polymer/polymer.html">
+    <link rel="import" href="../../iron-input/iron-input.html">    
     <link rel="import" href="test-config-behavior.html">
   </head>
   <body unresolved>
     Demo<p>
-    <test-config-behavior account="testAccount" api-key="someKey" container="testContainer"></test-config-behavior>
+    <template is="dom-bind" id="app">
+      <label>Account:&nbsp;</label><input is="iron-input" bind-value="{{account}}" placeholder="Enter account id..."><p>
+      <label>API Key:&nbsp;</label><input is="iron-input" bind-value="{{apiKey}}" placeholder="Enter api key..."><p>
+      <label>Container:&nbsp;</label><input is="iron-input" bind-value="{{container}}" placeholder="Enter container id..."><p>
+      <hr>
+      <div>
+        <test-config-behavior account="{{account}}" api-key="{{apiKey}}" container="{{container}}">
+        </test-config-behavior>
+      </div>
+    </template>
   </body>
 </html>
