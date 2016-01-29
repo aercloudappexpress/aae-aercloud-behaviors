@@ -23,8 +23,14 @@ Provide configuration to call AerCloud Webservice APIs.
 (function() {
   var appExp = window.AppExpress;
 
+  /** @polymerBehavior AppExpress.AerCloudConfig */
   appExp.AerCloudConfig = {
     properties: {
+      endpoint: {
+        type: String,
+        notify: true,
+        value: "https://api.aercloud.aeris.com/v1"
+      },
       account: {
       	type: String,
       	notify: true
